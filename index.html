@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>ClearSkies App</title>
+</head>
+<body>
+    <!-- navbar section -->
+    <section class="container-fluid section1">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary p-lg-4 ps-lg-5 pe-lg-5 text-lg-center bg-dark">
+            <img src="images/Clearskies.png" class="logo_img">
+            <div class="ms-lg-2 logo_text text-center">
+                <a class="text-white p-1">ClearSkies</a>
+                <p class="text-light">Enjoy every day under clear skies</p>
+            </div>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active btn-home" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white btn" href="#">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white btn" href="#">Photos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white btn" href="#">Contact</a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </section>
+    <!-- End of navbar -->
+
+    <!-- Panner Section -->
+    <section class="panner text-center">
+        <div class="location w-75">
+            <input type="text" placeholder="Find your Location" id="searchInput" class="position-relative search w-100">
+            <input type="button" value="find" type="submit" id="find" class="position-absolute find">
+        </div>
+
+        <div id="alertsearchInput" class="alert w-75 alert-danger d-none">
+            <strong>To help you please Enter Correct Word</strong>
+        </div>
+    </section>
+
+    <!-- End of Panner Section -->
+
+    <!-- three divs -->
+    <section class="divs">
+        <div class="w-75 m-auto d-flex row justify-content-center threedivs">
+            <!-- today div -->
+            <div class="div1 col-lg-4">
+                <!-- today header -->
+        <div class="today-header d-flex flex-row justify-content-between p-2">
+         Tuesday
+         <div id="today-date">
+            9/5/2023
+        </div>
+        </div>
+        <!-- end of today header -->
+
+        <!-- today body -->
+        <div class="today-body">
+        <div class="today-city" id="cityName">
+            Cairo
+        </div>
+        <div class="today-temp" id="today-tem">
+            23
+        </div>
+        <img src="" id="today-icon" class="today-icon">
+        <div class="today-text" id="today-text">Sunny</div>
+
+        <div class="d-flex flex-row justify-content-lg-between w-100 p-2">
+            <span class="span1">
+                <img src="images/umbrella.png" id="rain">
+                <span id="will_rain">30%</span>
+            </span>
+
+                <span class="span1">
+                    <img src="images/wind.png" id="windd">
+                    <span id="wind">30%</span>
+                </span>
+
+                <span class="span1">
+                    <img src="images/compass.jpg" id="compass">
+                    <span id="direction">30%</span>
+                </span>
+        </div>
+        </div>
+        <!-- end of today body -->
+    </div>
+    <!-- end of today div>-->
+
+    <!-- start of tomorrow div-->
+    <div class="div2 col-lg-4">
+        <div id="tom-name" class="tom-header text-center justify-content-between p-2">
+            Friday
+        </div>
+        <div class="tom-body p-5 text-center">
+            <img src="" id="tom-icon">
+            <div class="tom-max-tem">
+                <span id="tom-max-tem">77</span>c
+            </div>
+            <div class="tom-min-tem">
+                <span id="tom-min-tem">77</span>c
+            </div>
+            <br>
+            <div class="text-tem" id="tom-text">Sunny</div>
+        </div>
+    </div>
+    <!-- end of tomorrow div-->
+
+    <!-- Start of After Tomorrow div-->
+    <div class="div3 col-lg-4">
+        <div class="tom-header text-center p-2" id="aftom-name">
+            Friday
+        </div>
+        <div class="tom-body p-5 text-center">
+            <img src="" id="aftom-icon">
+            <div class="tom-max-tem">
+                <span id="aftom-max-tem">77</span>c
+            </div>
+            <div class="tom-min-tem">
+                <span id="aftom-min-tem">77</span>c
+            </div>
+            <br>
+            <div class="text-tem" id="aftom-text">Sunny</div>
+        </div>
+    </div>
+    <!-- End of After Tomorrow div-->
+
+    <div id="todayname">
+
+    </div>
+
+        </div>
+    </section>
+    <!-- end of section three divs -->
+    <script src="JS/MyScript.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+</body>
+</html>
